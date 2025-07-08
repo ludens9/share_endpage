@@ -65,7 +65,7 @@ h2, .h2 {
 /* 헤더 섹션 */
 .header-section {
     background-color: #C1FFB9;
-    padding: 76px 20px 20px 20px;
+    padding: 40px 20px;
 }
 
 .header-content {
@@ -79,20 +79,10 @@ h2, .h2 {
     width: auto;
 }
 
-.download-btn {
-    background-color: #373737;
-    color: #ffffff;
-    font-size: 13px;
-    line-height: 160%;
-    font-weight: 700;
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
+.download-btn-img {
+    width: 127px;
     height: 34px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* 타이틀 섹션 */
@@ -149,8 +139,8 @@ h2, .h2 {
 }
 
 .profile {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid #ffffff;
 }
@@ -165,8 +155,8 @@ h2, .h2 {
 }
 
 .profile-count {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid #ffffff;
     background-color: #C1FFB9;
@@ -367,7 +357,7 @@ h2, .h2 {
 /* 반응형 조정 (모바일 기준) */
 @media (max-width: 480px) {
     .header-section {
-        padding: 60px 16px 16px 16px;
+        padding: 40px 16px;
     }
     
     .title-section,
