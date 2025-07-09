@@ -20,10 +20,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* 포커스 접근성 개선 */
+/* 포커스 아웃라인 제거 */
 *:focus {
-    outline: 2px solid #3BC372;
-    outline-offset: 2px;
+    outline: none;
 }
 
 /* 숨김 텍스트 (스크린 리더용) */
@@ -105,22 +104,12 @@ h2, .h2 {
     height: 34px;
     width: auto;
     cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.logo:hover {
-    transform: scale(1.05);
 }
 
 .download-btn-img {
     width: 127px;
     height: 34px;
     cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.download-btn-img:hover {
-    transform: scale(1.05);
 }
 
 /* 타이틀 섹션 */
@@ -234,17 +223,6 @@ h2, .h2 {
     align-items: center;
     justify-content: center;
     gap: 4px;
-    transition: all 0.2s ease;
-}
-
-.content-btn:hover {
-    background-color: #f5f5f5;
-    border-color: rgba(0, 0, 0, 0.1);
-    transform: translateY(-1px);
-}
-
-.content-btn:active {
-    transform: translateY(0);
 }
 
 .btn-icon {
@@ -327,12 +305,6 @@ h2, .h2 {
     object-fit: cover;
     flex-shrink: 0;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.photo-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .photo-slider::-webkit-scrollbar {
@@ -394,11 +366,6 @@ h2, .h2 {
 
 .store-btn {
     cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.store-btn:hover {
-    transform: scale(1.05);
 }
 
 .store-btn:first-child {
@@ -438,18 +405,6 @@ h2, .h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1001;
-    animation: popupSlideIn 0.3s ease-out;
-}
-
-@keyframes popupSlideIn {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
 }
 
 .popup-content {
@@ -553,11 +508,6 @@ h2, .h2 {
         width: 214px;
         height: 116px;
         cursor: pointer;
-        transition: transform 0.2s ease;
-    }
-
-    .logo-big:hover {
-        transform: scale(1.05);
     }
 
     /* 두번째 영역 (아래): 푸터 섹션 */
