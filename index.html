@@ -164,32 +164,32 @@
 
             <div class="empty-section" style="height: 80px;"></div>
 
-            <!-- 내용 섹션 -->
-            <section class="content-section">
-                <h2 class="section-title">내용</h2>
-                <div class="content-text">
-                    <p>1인가구들에게 유용한 지역정보를 브로콜리에서 확인하세요. 혼자 사는 사람들을 위한 다양한 소식과 정보를 한 곳에서 만날 수 있습니다.</p>
-                    <p>자취생들이 직접 참여할 수 있는 다양한 활동과 이벤트 정보를 제공합니다. 혼자 사는 사람들도 부담 없이 참여해서 새로운 사람들과 소통할 수 있는 기회를 찾아보세요.</p>
-                    <p>브로콜리 앱에서 더 많은 지역정보와 커뮤니티 소식을 확인하실 수 있습니다. 1인가구 맞춤 정보로 더 나은 자취생활을 시작해보세요!</p>
-                </div>
-                <div class="content-overlay">
-                    <button class="content-btn" onclick="goToOriginal()">
-                        원본으로 바로가기
-                        <img src="assets/more.png" alt="더보기 화살표 아이콘" class="btn-icon">
-                    </button>
-                </div>
-            </section>
-
-            <div class="empty-section" style="height: 60px;"></div>
-
-            <!-- 사진 섹션 -->
-            <section class="photo-section">
-                <h2 class="section-title">사진</h2>
+            <!-- 상세정보 섹션 -->
+            <section class="detail-section">
+                <h2 class="section-title">상세정보</h2>
+                
+                <!-- 사진 슬라이드 -->
                 <div class="photo-slider">
                     <img src="assets/default_photo1.png" alt="브로콜리 지역정보 관련 사진 1" class="photo-item" onclick="showPhotoPopup()">
                     <img src="assets/default_photo2.png" alt="브로콜리 지역정보 관련 사진 2" class="photo-item" onclick="showPhotoPopup()">
                     <img src="assets/default_photo3.png" alt="브로콜리 지역정보 관련 사진 3" class="photo-item" onclick="showPhotoPopup()">
                     <img src="assets/default_photo4.png" alt="브로콜리 지역정보 관련 사진 4" class="photo-item" onclick="showPhotoPopup()">
+                </div>
+                
+                <!-- 본문 -->
+                <div class="content-text">
+                    <p>1인가구들에게 유용한 지역정보를 브로콜리에서 확인하세요. 혼자 사는 사람들을 위한 다양한 소식과 정보를 한 곳에서 만날 수 있습니다.</p>
+                    <p>자취생들이 직접 참여할 수 있는 다양한 활동과 이벤트 정보를 제공합니다. 혼자 사는 사람들도 부담 없이 참여해서 새로운 사람들과 소통할 수 있는 기회를 찾아보세요.</p>
+                    <p>브로콜리 앱에서 더 많은 지역정보와 커뮤니티 소식을 확인하실 수 있습니다. 1인가구 맞춤 정보로 더 나은 자취생활을 시작해보세요!</p>
+                </div>
+                
+                <!-- 버튼 영역 -->
+                <div class="content-overlay">
+                    <div class="button-row">
+                        <button class="content-btn" onclick="goToOriginal()">원본보기</button>
+                        <button class="content-btn" onclick="goToMap()">지도</button>
+                        <button class="content-btn" onclick="goToBlogReview()">블로그리뷰</button>
+                    </div>
                 </div>
             </section>
 
@@ -335,6 +335,14 @@
 
         function goToOriginal() {
             window.open('https://www.naver.com', '_blank', 'noopener,noreferrer');
+        }
+
+        function goToMap() {
+            window.open('https://map.naver.com', '_blank', 'noopener,noreferrer');
+        }
+
+        function goToBlogReview() {
+            window.open('https://blog.naver.com', '_blank', 'noopener,noreferrer');
         }
 
         function goToBrocoly() {
